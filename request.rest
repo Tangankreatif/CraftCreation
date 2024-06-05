@@ -1,0 +1,84 @@
+// Create a penjual
+POST http://localhost:5000/penjual
+Content-Type: application/json
+
+{
+    "name1": "User",
+    "name2": "Craft",
+    "email": "user@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "user"
+}
+
+###
+// get All penjual
+GET http://localhost:5000/penjual
+
+###
+//Get single penjual
+
+GET http://localhost:5000/penjual/5f9aef59-497c-4fef-8efa-1da6a21cab1a
+
+###
+//Update penjual
+PATCH http://localhost:5000/penjual/5f9aef59-497c-4fef-8efa-1da6a21cab1a
+Content-Type: application/json
+
+{
+    "name1": "Alexander",
+    "namabelakang": "Kevin",
+    "email": "kevinpaskahhirawan@gmail.com",
+    "password": "200403",
+    "confPassword": "200403"
+}
+
+###
+//DELETE a penjual
+DELETE http://localhost:5000/penjual/8623e2bd-e989-4e87-abb3-3d831f896288
+
+###
+//login admin
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "123456"
+}
+
+###
+//login user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "user@gmail.com",
+    "password": "123456"
+}
+
+
+###
+GET http://localhost:5000/me
+
+###
+DELETE http://localhost:5000/logout
+
+###
+// get All Product
+GET http://localhost:5000/product
+
+###
+// get Product
+GET http://localhost:5000/product/0bb9e49a-ff3c-48a2-808f-6d6f561c5756
+
+###
+// Post Data Product
+POST http://localhost:5000/product
+Content-Type: application/json
+
+{
+    "namaproduk": "Produk 6",
+    "deskripsi": "Kerajinan kayu",
+    "harga": 25
+}
