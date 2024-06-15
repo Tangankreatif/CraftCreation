@@ -1,0 +1,96 @@
+.half-background {
+    background: linear-gradient(to bottom, #fdfa74 0%, #46eaaa 100%);
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.gambar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    ;
+}
+
+.form-group input {
+    width: calc(1000% - 700px);
+    padding: 8px 5px;
+    border: 2px solid #8EEE42;
+    border-radius: 100px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #124E31;
+}
+
+
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+.form-check input[type="checkbox"] {
+    margin-right: 10px;}
+
+
+    .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin:23px 10px 23px 0;
+        text-align: center;
+        line-height: 40px;
+        border: 1px solid #8EEE42;
+        border-radius: 50%;
+        color: #124E31;
+        transition: all 0.5s ease;
+    }
+    .social-links a:hover{
+        color: #f7f7f7;
+        background-color: #8EEE42;
+    }
+
+    .custom-button {
+       
+        padding: 10px 50px;
+        font-size: 16px;
+        color: #124E31;
+        background: linear-gradient(to bottom, #bdf14d 0%, #e2f14d 100%);
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    .custom-button:hover {
+        background: #8EEE42 ;
+    }
+    
+    .custom-button:active {
+        transform: scale(0.95);
+    }
+    
+    .custom-button:focus {
+        outline: none;
+    }
